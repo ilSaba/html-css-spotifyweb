@@ -11,6 +11,10 @@ body{
 
 
 
+
+
+
+
 /* NAV */
 header{
     height: 100px;
@@ -40,13 +44,9 @@ header .btn-upgrade:hover{
     border: 1px solid green;
 }
 
-/* .ul-li-nav{
-    color: red;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-} */
+
+
+
 
 
 
@@ -54,7 +54,8 @@ header .btn-upgrade:hover{
 /* SIDEBAR */
 .img-logo{
     height: 80px;
-    margin: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .fa-spotify{
@@ -66,8 +67,9 @@ header .btn-upgrade:hover{
     height: calc(100vh - 100px);
     background-color: #000;
     margin-left: 0;
-    padding-left: 35px;
     padding-right: 35px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-icon{
@@ -91,12 +93,19 @@ header .btn-upgrade:hover{
 .select-bar-sidebar{
     display: inline-block;
     width: 5px;
-    height: 45px;
+    height: 42px;
     border-radius: 10px;
     background-color: #ADFF2C;
-    margin-left: -20px;
-    margin-right:10px;
+    margin-left: -15px;
+    margin-right: 7px;
 }
+
+.ul-style{
+    list-style-type: none;
+    padding-inline-start: 0;
+    color: #fff;
+}
+
 
 .playlist-button{
     background-color: #707170;
@@ -107,25 +116,43 @@ header .btn-upgrade:hover{
     background-color: #fff;
 }
 
+
 .sidebar-icon.description.playlist{
     vertical-align: 50%;
 }
 
-.sidebar.mamma{
-    margin-top: 50px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.download-svg{
-    background-color: #fff;
+.fa-arrow-circle-down{
     color: #fff;
 }
 
-.ciao{
-    display: flex;
-    justify-content: flex-end;
+.app-install{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 5px;
 }
+
+.end-sidebar{
+    height: 120px;
+    width: 280px;
+    margin-left: -15px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 100px;
+}
+
+#hr-app{
+    width: 245px;
+}
+
+.fa-user{
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+
+
+
 
 
 
@@ -134,13 +161,14 @@ header .btn-upgrade:hover{
 main{
     height: calc(100vh - 100px);
     width: 100%;
-    background-color: #fff;
+    background-color: #141922;
     display: flex;
-
 }
+
 .card{
     width: calc(100% - 280px);
     overflow-y: auto;
+    padding-top: 110px;
 }
 
 section{
@@ -148,6 +176,22 @@ section{
     height: 300px;
     background-color: purple;
 }
+
+.ul-li-nav{
+    color: #707170;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a{
+    color: #7D7F84;
+}
+
 
 
 
@@ -164,6 +208,12 @@ footer{
     align-items: center;
     width: 100vw; */
 }
+
+
+
+
+
+
 
 
 /* 
@@ -208,6 +258,10 @@ footer{
         width: 60px;
     }
 
+    .end-sidebar{
+        width: 60px;
+    }
+
     header{
         width: calc(100% - 60px);
     }
@@ -237,5 +291,28 @@ footer{
     h4{
         display: none;
     }
+
+    #hr-app{
+        display: none;
+    }
+
+    .app-install{
+        display: none;
+    }
+
+    .fa-user{
+        margin-top: 20px;
+    }
+
+    .fa-arrow-circle-down{
+        margin-left: 6px;
+        padding-top: 40px;
+    }
+
+    .container{
+        margin-right: 0;
+    }
+
+
 
 }
