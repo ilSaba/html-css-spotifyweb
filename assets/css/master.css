@@ -185,8 +185,7 @@ nav ul{
 
 section{
     margin: 30px 10px;
-    height: 500px;
-    /* background-color: purple; */
+    height: 400px;
     width: calc(100vw / 6 - 67px);
     min-width: 162px;
     align-content: flex-start;
@@ -227,13 +226,7 @@ h1{
 .img-card:hover{
     opacity: 0.3;
     transition: .2s;
-    content: url();
-}
-
-.ciao{
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
+    position: relative;
 }
 
 
@@ -273,29 +266,23 @@ padding-left: 15px;
 footer{
     height: 100px;
     background-color: #282828;
-    /* display: flex;
-    justify-content: flex-end;
+    display: flex;
+    /* justify-content: flex-end;
     align-items: center;
     width: 100vw; */
 }
 
+.album-description{
 
 
+}
 
+.ciao{
+    width: 50px;
+    height: 50px;
+    justify-content: flex-end;
+}
 
-
-
-
-/* 
--------------------------- */
-
-
-/* @media all and (max-width: 1500px){
-    section{
-        min-width: 180px;
-    }
-
-} */
 
 
 
@@ -384,12 +371,12 @@ footer{
         margin-right: 0;
     }
 
-    .card{
+    .app-content{
         width: calc(100% - 60px);
     }
 
     /* section{
-        min-width: 50px;
+        min-width: 100px;
     } */
 
 
